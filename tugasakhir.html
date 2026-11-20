@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FORE COFFEE — Luxury Performance</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+
+<style>
+
+/* TYPOGRAPHY ALAM FERRARI: Montserrat Heavy / Sharp Geometric */
+
+body {
+
+font-family: 'Montserrat', sans-serif;
+
+background-color: #ffffff;
+
+color: #0f172a;
+
+scroll-behavior: smooth;
+
+}
+
+
+
+/* SKEMA WARNA: HIJAU TUA & PUTIH */
+
+.bg-fore-darkgreen {
+
+background-color: #005A2B;
+
+}
+
+.bg-fore-deepgreen {
+
+background-color: #00401E;
+
+}
+
+.text-fore-darkgreen {
+
+color: #005A2B;
+
+}
+
+.border-fore-darkgreen {
+
+border-color: #005A2B;
+
+}
+
+
+
+/* FERRARI STYLE SHARP BUTTONS & GLOW EFFECTS */
+
+.btn-ferrari-primary {
+
+background: linear-gradient(135deg, #005A2B 0%, #003B1C 100%);
+
+color: #ffffff;
+
+border: 1px solid #005A2B;
+
+letter-spacing: 0.15em;
+
+text-transform: uppercase;
+
+font-weight: 800;
+
+transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+position: relative;
+
+overflow: hidden;
+
+}
+
+.btn-ferrari-primary:hover {
+
+background: linear-gradient(135deg, #007337 0%, #005A2B 100%);
+
+box-shadow: 0 10px 25px -5px rgba(0, 90, 43, 0.4);
+
+transform: translateY(-2px);
+
+}
+
+.btn-ferrari-primary:active {
+
+transform: translateY(1px);
+
+}
+
+
+
+.btn-ferrari-outline {
+
+background: rgba(255, 255, 255, 0.95);
+
+color: #005A2B;
+
+border: 2px solid #005A2B;
+
+letter-spacing: 0.15em;
+
+text-transform: uppercase;
+
+font-weight: 800;
+
+transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+}
+
+.btn-ferrari-outline:hover {
+
+background: #005A2B;
+
+color: #ffffff;
+
+box-shadow: 0 10px 25px -5px rgba(0, 90, 43, 0.3);
+
+transform: translateY(-2px);
+
+}
+
+
+
+.btn-ferrari-ghost {
+
+color: #ffffff;
+
+border: 1px solid rgba(255, 255, 255, 0.6);
+
+backdrop-filter: blur(8px);
+
+letter-spacing: 0.15em;
+
+text-transform: uppercase;
+
+font-weight: 800;
+
+transition: all 0.3s ease;
+
+}
+
+.btn-ferrari-ghost:hover {
+
+background: #ffffff;
+
+color: #005A2B;
+
+border-color: #ffffff;
+
+}
+
+
+
+/* SLIDER TRANSITIONS */
+
+.slide-item {
+
+opacity: 0;
+
+transition: opacity 0.8s ease-in-out;
+
+pointer-events: none;
+
+}
+
+.slide-item.active {
+
+opacity: 1;
+
+pointer-events: auto;
+
+}
+
+</style>
+
+</head>
+
+<body class="antialiased selection:bg-emerald-800 selection:text-white">
+
+
+
+<!-- TOP RUNNING TICKER BANNER (STYLE FERRARI RACING) -->
+
+<div class="bg-fore-deepgreen text-white py-2.5 overflow-hidden text-[10px] font-black tracking-[0.25em] uppercase border-b border-emerald-900">
+
+<div class="whitespace-nowrap flex space-x-12 justify-around">
+
+<span>✦ HIGH-PERFORMANCE ARABICA SELECTION</span>
+
+<span>✦ THE NEW COFFEE CULTURE</span>
+
+<span>✦ CRAFTED WITH SWISS-ENGINEERED EXTRACTION</span>
+
+<span>✦ DOWNLOAD THE FORE APP FOR EXCLUSIVE PRIVILEGES</span>
+
+</div>
+
+</div>
+
+
+
+<!-- NAVIGATION BAR (FERRARI MINIMALIST LUXURY STYLE) -->
+
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+
+<!-- LOGO -->
+
+<a href="#" class="flex items-center space-x-3 group">
+
+<div class="w-10 h-10 bg-fore-darkgreen rounded-none flex items-center justify-center font-black text-white text-xl tracking-tighter group-hover:bg-emerald-700 transition-colors">
+
+F
+
+</div>
+
+<div class="flex flex-col">
+
+<span class="text-xl font-black tracking-[0.2em] text-gray-900">FORE</span>
+
+<span class="text-[9px] tracking-[0.4em] text-fore-darkgreen font-extrabold -mt-1">COFFEE</span>
+
+</div>
+
+</a>
+
+
+
+<!-- NAV LINKS -->
+
+<div class="hidden md:flex items-center space-x-10 text-xs font-black tracking-[0.2em] uppercase text-gray-700">
+
+<a href="#hero-slider" class="hover:text-fore-darkgreen transition-colors">Home</a>
+
+<a href="#models" class="hover:text-fore-darkgreen transition-colors">Menu Series</a>
+
+<a href="#video-campaign" class="hover:text-fore-darkgreen transition-colors">Brand Film</a>
+
+<a href="#performance" class="hover:text-fore-darkgreen transition-colors">Craftsmanship</a>
+
+<a href="#lifestyle" class="hover:text-fore-darkgreen transition-colors">Sustainability</a>
+
+</div>
+
+
+
+<!-- CTA BUTTON -->
+
+<div class="flex items-center space-x-4">
+
+<button onclick="openModal('downloadModal')" class="btn-ferrari-primary text-xs px-7 py-3.5 rounded-none flex items-center gap-3">
+
+<span>Get The App</span>
+
+<span class="text-sm">&rarr;</span>
+
+</button>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- HERO SECTION WITH SLIDER (FERRARI LAYOUT) -->
+
+<section id="hero-slider" class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-gray-100 border-b border-gray-200">
+
+
+<!-- SLIDE 1 -->
+
+<div class="slide-item active absolute inset-0 w-full h-full flex items-center justify-center">
+
+<div class="absolute inset-0 bg-gradient-to-r from-emerald-950/85 via-emerald-950/50 to-transparent z-10"></div>
+
+<img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2000&auto=format&fit=crop"
+
+alt="Fore Coffee Hero 1"
+
+class="absolute inset-0 w-full h-full object-cover object-center filter contrast-110">
+
+
+<div class="relative z-20 max-w-7xl w-full px-6 mx-auto">
+
+<div class="max-w-2xl">
+
+<span class="text-emerald-400 text-xs font-black tracking-[0.4em] uppercase mb-4 block">
+
+Engineered For Excellence
+
+</span>
+
+<h1 class="text-5xl md:text-7xl font-black text-white uppercase leading-none mb-6 tracking-tight">
+
+Pure Energy.<br>
+
+<span class="text-emerald-400">Refined Taste.</span>
+
+</h1>
+
+<p class="text-gray-200 text-sm md:text-base font-light mb-8 leading-relaxed tracking-wide">
+
+Pengalaman kopi Indonesia kelas dunia. Biji kopi specialty Arabika dipanggang mikro dan diekstraksi dengan presisi tinggi.
+
+</p>
+
+<div class="flex flex-col sm:flex-row items-center gap-4">
+
+<a href="#models" class="w-full sm:w-auto btn-ferrari-primary text-xs px-8 py-4 rounded-none text-center">
+
+Explore Collections
+
+</a>
+
+<a href="#video-campaign" class="w-full sm:w-auto btn-ferrari-ghost text-xs px-8 py-4 rounded-none text-center">
+
+Watch Film
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- SLIDE 2 -->
+
+<div class="slide-item absolute inset-0 w-full h-full flex items-center justify-center">
+
+<div class="absolute inset-0 bg-gradient-to-r from-emerald-950/85 via-emerald-950/50 to-transparent z-10"></div>
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2000&auto=format&fit=crop"
+
+alt="Fore Coffee Hero 2"
+
+class="absolute inset-0 w-full h-full object-cover object-center filter contrast-110">
+
+
+<div class="relative z-20 max-w-7xl w-full px-6 mx-auto">
+
+<div class="max-w-2xl">
+
+<span class="text-emerald-400 text-xs font-black tracking-[0.4em] uppercase mb-4 block">
+
+Specialty Flavors
+
+</span>
+
+<h1 class="text-5xl md:text-7xl font-black text-white uppercase leading-none mb-6 tracking-tight">
+
+Taste Of The<br>
+
+<span class="text-emerald-400">New Culture.</span>
+
+</h1>
+
+<p class="text-gray-200 text-sm md:text-base font-light mb-8 leading-relaxed tracking-wide">
+
+Kombinasi unik Fore Aren Latte dan racikan musiman eksklusif yang dirancang untuk performa harimu.
+
+</p>
+
+<div class="flex flex-col sm:flex-row items-center gap-4">
+
+<button onclick="openModal('orderModal', 'Varian Signature')" class="w-full sm:w-auto btn-ferrari-primary text-xs px-8 py-4 rounded-none text-center">
+
+Order Now
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- SLIDE 3 -->
+
+<div class="slide-item absolute inset-0 w-full h-full flex items-center justify-center">
+
+<div class="absolute inset-0 bg-gradient-to-r from-emerald-950/85 via-emerald-950/50 to-transparent z-10"></div>
+
+<img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=2000&auto=format&fit=crop"
+
+alt="Fore Coffee Hero 3"
+
+class="absolute inset-0 w-full h-full object-cover object-center filter contrast-110">
+
+
+<div class="relative z-20 max-w-7xl w-full px-6 mx-auto">
+
+<div class="max-w-2xl">
+
+<span class="text-emerald-400 text-xs font-black tracking-[0.4em] uppercase mb-4 block">
+
+#FOREsponsible Mission
+
+</span>
+
+<h1 class="text-5xl md:text-7xl font-black text-white uppercase leading-none mb-6 tracking-tight">
+
+Sustainable<br>
+
+<span class="text-emerald-400">Architecture.</span>
+
+</h1>
+
+<p class="text-gray-200 text-sm md:text-base font-light mb-8 leading-relaxed tracking-wide">
+
+Inovasi gerai kopi ramah lingkungan yang dibangun dari ratusan kilogram plastik daur ulang.
+
+</p>
+
+<div class="flex flex-col sm:flex-row items-center gap-4">
+
+<a href="#lifestyle" class="w-full sm:w-auto btn-ferrari-primary text-xs px-8 py-4 rounded-none text-center">
+
+Read ESG Report
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CONTROLS STYLE -->
+
+<button onclick="prevSlide()" class="absolute left-6 z-30 bg-white/20 hover:bg-white text-gray-900 border border-white/40 p-4 rounded-none backdrop-blur-md transition-all">
+
+&#10094;
+
+</button>
+
+<button onclick="nextSlide()" class="absolute right-6 z-30 bg-white/20 hover:bg-white text-gray-900 border border-white/40 p-4 rounded-none backdrop-blur-md transition-all">
+
+&#10095;
+
+</button>
+
+
+
+<!-- DOTS -->
+
+<div class="absolute bottom-6 z-30 flex space-x-3">
+
+<button onclick="setSlide(0)" class="dot-btn w-8 h-1 bg-white transition-all"></button>
+
+<button onclick="setSlide(1)" class="dot-btn w-8 h-1 bg-white/40 transition-all"></button>
+
+<button onclick="setSlide(2)" class="dot-btn w-8 h-1 bg-white/40 transition-all"></button>
+
+</div>
+
+</section>
+
+
+
+<!-- FERRARI HYPER-SPECS SECTION -->
+
+<section class="bg-fore-deepgreen text-white py-12 border-b border-emerald-900">
+
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+<div class="border-r border-emerald-800/60 last:border-0">
+
+<div class="text-4xl md:text-5xl font-black font-mono tracking-tight">100%</div>
+
+<div class="text-[10px] font-extrabold tracking-[0.25em] text-emerald-300 uppercase mt-2">Indonesian Arabica</div>
+
+</div>
+
+<div class="border-r border-emerald-800/60 last:border-0">
+
+<div class="text-4xl md:text-5xl font-black font-mono tracking-tight">9M+</div>
+
+<div class="text-[10px] font-extrabold tracking-[0.25em] text-emerald-300 uppercase mt-2">Cups Served / Year</div>
+
+</div>
+
+<div class="border-r border-emerald-800/60 last:border-0">
+
+<div class="text-4xl md-5xl font-black font-mono tracking-tight">9M+</div>
+
+<div class="text-[10px] font-extrabold tracking-[0.25em] text-emerald-300 uppercase mt-2">Cups Served / Year</div>
+
+</div>
+
+<div class="border-r border-emerald-800/60 last:border-0">
+
+<div class="text-4xl md:text-5xl font-black font-mono tracking-tight">450 KG</div>
+
+<div class="text-[10px] font-extrabold tracking-[0.25em] text-emerald-300 uppercase mt-2">Recycled Plastic</div>
+
+</div>
+
+<div>
+
+<div class="text-4xl md:text-5xl font-black font-mono tracking-tight">#1</div>
+
+<div class="text-[10px] font-extrabold tracking-[0.25em] text-emerald-300 uppercase mt-2">Specialty Coffee</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- YOUTUBE VIDEO SECTION -->
+
+<section id="video-campaign" class="py-24 bg-white border-b border-gray-100">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-gray-200 pb-6">
+
+<div>
+
+<span class="text-fore-darkgreen text-xs font-black tracking-[0.3em] uppercase block">
+
+Official Brand Film
+
+</span>
+
+<h2 class="text-3xl md:text-5xl font-black text-gray-900 uppercase tracking-tight mt-1">
+
+Setiap Fore Punya Cerita
+
+</h2>
+
+</div>
+
+<p class="text-gray-500 text-xs tracking-widest uppercase mt-4 md:mt-0 max-w-sm">
+
+Menghubungkan inspirasi, pertemanan, dan kenyamanan dalam setiap momen.
+
+</p>
+
+</div>
+
+
+
+<!-- VIDEO EMBED ASPECT 16:9 WITH FERRARI BORDER -->
+
+<div class="relative w-full overflow-hidden border-2 border-fore-darkgreen rounded-none shadow-2xl" style="padding-top: 56.25%;">
+
+<iframe
+
+class="absolute top-0 left-0 w-full h-full"
+
+src="https://www.youtube.com/embed/2-e2qtQHg2Y?rel=0&modestbranding=1"
+
+title="Setiap Fore Punya Cerita"
+
+frameborder="0"
+
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+allowfullscreen>
+
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FEATURED MENU CARDS (FERRARI CAR CONFIGURATOR CARD STYLE) -->
+
+<section id="models" class="py-24 max-w-7xl mx-auto px-6">
+
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-gray-200 pb-8">
+
+<div>
+
+<span class="text-fore-darkgreen text-xs font-black tracking-[0.3em] uppercase">The Lineup</span>
+
+<h2 class="text-3xl md:text-5xl font-black uppercase text-gray-900 tracking-tight mt-2">
+
+Signature Collections
+
+</h2>
+
+</div>
+
+<p class="text-gray-500 text-xs tracking-widest uppercase mt-4 md:mt-0">
+
+High-Performance Beverages Engineered For Daily Precision
+
+</p>
+
+</div>
+
+
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
+<!-- Card 1 -->
+
+<div class="bg-white border-2 border-gray-200 p-6 rounded-none relative group hover:border-fore-darkgreen transition-colors">
+
+<div class="h-64 overflow-hidden mb-6 relative bg-gray-100">
+
+<img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=800&auto=format&fit=crop"
+
+alt="Aren Latte"
+
+class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+
+<span class="absolute top-0 left-0 bg-fore-darkgreen text-white text-[10px] font-black tracking-widest uppercase px-3 py-1.5">
+
+Iconic V8
+
+</span>
+
+</div>
+
+<span class="text-[10px] font-black text-gray-400 tracking-[0.2em] uppercase">Series 01 — Sweet Heritage</span>
+
+<h3 class="text-2xl font-black text-gray-900 uppercase mt-1 tracking-tight">Fore Aren Latte</h3>
+
+<p class="text-gray-600 text-xs font-light mt-3 leading-relaxed">
+
+Espresso khas Fore dipadukan dengan gula aren alami pilihan Indonesia dan susu segar bertekstur lembut.
+
+</p>
+
+<div class="mt-8 pt-4 border-t border-gray-100 flex items-center justify-between">
+
+<span class="text-sm font-black text-gray-900">Rp 29.000</span>
+
+<button onclick="openModal('orderModal', 'Fore Aren Latte')" class="btn-ferrari-outline text-[11px] px-5 py-2.5 rounded-none">
+
+Configure &rarr;
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- Card 2 -->
+
+<div class="bg-white border-2 border-gray-200 p-6 rounded-none relative group hover:border-fore-darkgreen transition-colors">
+
+<div class="h-64 overflow-hidden mb-6 relative bg-gray-100">
+
+<img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=800&auto=format&fit=crop"
+
+alt="Pandan Latte"
+
+class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+
+<span class="absolute top-0 left-0 bg-fore-darkgreen text-white text-[10px] font-black tracking-widest uppercase px-3 py-1.5">
+
+Botanical Edition
+
+</span>
+
+</div>
+
+<span class="text-[10px] font-black text-gray-400 tracking-[0.2em] uppercase">Series 02 — Fusion</span>
+
+<h3 class="text-2xl font-black text-gray-900 uppercase mt-1 tracking-tight">Pandan Latte</h3>
+
+<p class="text-gray-600 text-xs font-light mt-3 leading-relaxed">
+
+Infusi harum sari pandan alami diselimuti pekatnya espresso berkualitas tinggi.
+
+</p>
+
+<div class="mt-8 pt-4 border-t border-gray-100 flex items-center justify-between">
+
+<span class="text-sm font-black text-gray-900">Rp 29.000</span>
+
+<button onclick="openModal('orderModal', 'Pandan Latte')" class="btn-ferrari-outline text-[11px] px-5 py-2.5 rounded-none">
+
+Configure &rarr;
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- Card 3 -->
+
+<div class="bg-white border-2 border-gray-200 p-6 rounded-none relative group hover:border-fore-darkgreen transition-colors">
+
+<div class="h-64 overflow-hidden mb-6 relative bg-gray-100">
+
+<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop"
+
+alt="Butterscotch Latte"
+
+class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+
+<span class="absolute top-0 left-0 bg-fore-darkgreen text-white text-[10px] font-black tracking-widest uppercase px-3 py-1.5">
+
+Special Edition
+
+</span>
+
+</div>
+
+<span class="text-[10px] font-black text-gray-400 tracking-[0.2em] uppercase">Series 03 — Velvet</span>
+
+<h3 class="text-2xl font-black text-gray-900 uppercase mt-1 tracking-tight">Butterscotch Latte</h3>
+
+<p class="text-gray-600 text-xs font-light mt-3 leading-relaxed">
+
+Sensasi manis krim butterscotch dengan aksen rasa yang kaya melengkapi karakter espresso.
+
+</p>
+
+<div class="mt-8 pt-4 border-t border-gray-100 flex items-center justify-between">
+
+<span class="text-sm font-black text-gray-900">Rp 32.000</span>
+
+<button onclick="openModal('orderModal', 'Butterscotch Latte')" class="btn-ferrari-outline text-[11px] px-5 py-2.5 rounded-none">
+
+Configure &rarr;
+
+</button>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+<!-- CRAFTSMANSHIP SECTION (FERRARI ENGINE CRAFT) -->
+
+<section id="performance" class="bg-gray-50 py-24 border-y border-gray-200">
+
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+<div>
+
+<span class="text-fore-darkgreen text-xs font-black tracking-[0.4em] uppercase mb-3 block">
+
+Precision Engineering
+
+</span>
+
+<h2 class="text-4xl md:text-5xl font-black text-gray-900 uppercase tracking-tight mb-6 leading-tight">
+
+Grind The Essentials.<br>
+
+<span class="text-gray-400">Zero Compromise.</span>
+
+</h2>
+
+<p class="text-gray-600 text-sm leading-relaxed mb-6 font-light">
+
+setiap cangkir Fore Coffee melalui kontrol suhu mikro dan ekstraksi bertekanan presisi tinggi menggunakan mesin standar Swiss.
+
+</p>
+
+<ul class="space-y-4 text-xs font-black uppercase tracking-widest text-gray-700 mb-8">
+
+<li class="flex items-center space-x-3">
+
+<span class="w-2.5 h-2.5 bg-fore-darkgreen"></span>
+
+<span>Single-Origin Specialty Arabica Selection</span>
+
+</li>
+
+<li class="flex items-center space-x-3">
+
+<span class="w-2.5 h-2.5 bg-fore-darkgreen"></span>
+
+<span>Micro-Roast Temperature Calibration</span>
+
+</li>
+
+<li class="flex items-center space-x-3">
+
+<span class="w-2.5 h-2.5 bg-fore-darkgreen"></span>
+
+<span>Championship Level Barista Extraction</span>
+
+</li>
+
+</ul>
+
+<button onclick="openModal('infoModal')" class="btn-ferrari-primary text-xs px-8 py-4 rounded-none">
+
+Discover The Process
+
+</button>
+
+</div>
+
+
+
+<div class="relative">
+
+<div class="border-4 border-fore-darkgreen bg-white overflow-hidden shadow-2xl">
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1000&auto=format&fit=crop"
+
+alt="Barista Craftsmanship"
+
+class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SUSTAINABILITY INITIATIVE SECTION -->
+
+<section id="lifestyle" class="py-24 max-w-7xl mx-auto px-6">
+
+<div class="bg-fore-darkgreen text-white p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10">
+
+<div class="max-w-xl">
+
+<span class="text-emerald-300 text-xs font-black tracking-[0.3em] uppercase block mb-3">
+
+#FOREsponsible Mission
+
+</span>
+
+<h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">
+
+Built With Upcycled Materials
+
+</h2>
+
+<p class="text-gray-200 text-xs md:text-sm font-light leading-relaxed">
+
+Gerai kami di Kuningan City Jakarta dibangun menggunakan 450kg gelas plastik daur ulang. Menghadirkan performa kopi tinggi dengan komitmen menjaga kelestarian bumi.
+
+</p>
+
+</div>
+
+<button onclick="openModal('infoModal')" class="btn-ferrari-ghost text-xs px-8 py-4 rounded-none whitespace-nowrap">
+
+Read ESG Report
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER (LUXURY FERRARI STYLE) -->
+
+<footer class="bg-fore-deepgreen text-gray-400 text-xs py-16 border-t border-emerald-950">
+
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+
+<div>
+
+<div class="flex items-center space-x-2 mb-4">
+
+<div class="w-7 h-7 bg-white font-black text-fore-darkgreen flex items-center justify-center text-sm">F</div>
+
+<span class="text-white font-black tracking-[0.2em] text-sm">FORE COFFEE</span>
+
+</div>
+
+<p class="text-gray-300 text-xs font-light leading-relaxed">
+
+PT Fore Kopi Indonesia Tbk.<br>
+
+Thamrin Plaza, Lt. PH, Kebon Melati, Jakarta Pusat.
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h4 class="text-white font-black tracking-[0.2em] uppercase text-xs mb-4">Directory</h4>
+
+<ul class="space-y-2">
+
+<li><a href="#models" class="hover:text-white transition-colors">Menu Series</a></li>
+
+<li><a href="#" class="hover:text-white transition-colors">Store Locator</a></li>
+
+<li><a href="#" class="hover:text-white transition-colors">Investor Relations</a></li>
+
+</ul>
+
+</div>
+
+
+
+<div>
+
+<h4 class="text-white font-black tracking-[0.2em] uppercase text-xs mb-4">Experience</h4>
+
+<ul class="space-y-2">
+
+<li><a href="#" class="hover:text-white transition-colors">Fore Mobile App</a></li>
+
+<li><a href="#" class="hover:text-white transition-colors">Corporate Programs</a></li>
+
+<li><a href="#" class="hover:text-white transition-colors">Sustainability</a></li>
+
+</ul>
+
+</div>
+
+
+
+<div>
+
+<h4 class="text-white font-black tracking-[0.2em] uppercase text-xs mb-4">Support</h4>
+
+<p class="text-gray-300 text-xs mb-4">Customer Care: 0812-1111-8456</p>
+
+<div class="flex space-x-4 text-white font-black text-[10px] tracking-widest">
+
+<a href="#" class="hover:text-emerald-300">INSTAGRAM</a>
+
+<a href="#" class="hover:text-emerald-300">TWITTER</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="max-w-7xl mx-auto px-6 pt-8 border-t border-emerald-900/60 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-widest uppercase text-gray-400">
+
+<p>© 2026 FORE COFFEE. ALL RIGHTS RESERVED.</p>
+
+<div class="flex space-x-6 mt-4 md:mt-0">
+
+<a href="#" class="hover:text-white">TERMS OF SERVICE</a>
+
+<a href="#" class="hover:text-white">PRIVACY POLICY</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- MODAL DOWNLOAD APP -->
+
+<div id="downloadModal" class="fixed inset-0 bg-black/75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+
+<div class="bg-white rounded-none border-2 border-fore-darkgreen max-w-md w-full p-8 text-center shadow-2xl relative">
+
+<button onclick="closeModal('downloadModal')" class="absolute top-4 right-4 text-gray-500 hover:text-black font-black text-xl">&times;</button>
+
+<div class="w-12 h-12 bg-fore-darkgreen text-white font-black flex items-center justify-center mx-auto mb-4 text-xl">F</div>
+
+<h3 class="text-2xl font-black text-gray-900 uppercase mb-2 tracking-tight">Fore Coffee Mobile</h3>
+
+<p class="text-gray-600 text-xs font-light mb-8">Unduh aplikasi untuk mengakses kemudahan pemesanan presisi tinggi dan promosi eksklusif.</p>
+
+<div class="flex justify-center gap-4">
+
+<button onclick="alert('Mengarahkan ke Google Play Store...')" class="btn-ferrari-primary text-xs px-6 py-3 rounded-none">Google Play</button>
+
+<button onclick="alert('Mengarahkan ke App Store...')" class="btn-ferrari-outline text-xs px-6 py-3 rounded-none">App Store</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- MODAL PESAN PRODUK -->
+
+<div id="orderModal" class="fixed inset-0 bg-black/75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+
+<div class="bg-white rounded-none border-2 border-fore-darkgreen max-w-md w-full p-8 text-center shadow-2xl relative">
+
+<button onclick="closeModal('orderModal')" class="absolute top-4 right-4 text-gray-500 hover:text-black font-black text-xl">&times;</button>
+
+<h3 class="text-2xl font-black text-gray-900 uppercase mb-2 tracking-tight" id="modalProductName">Configure Product</h3>
+
+<p class="text-gray-600 text-xs font-light mb-8">Tentukan ukuran cangkir dan tingkat kemanisan sesuai selera Anda.</p>
+
+<button onclick="alert('Pesanan telah ditambahkan ke keranjang!'); closeModal('orderModal')" class="w-full btn-ferrari-primary text-xs py-4 rounded-none">
+
+Confirm Order &rarr;
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- MODAL INFO SELENGKAPNYA -->
+
+<div id="infoModal" class="fixed inset-0 bg-black/75 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+
+<div class="bg-white rounded-none border-2 border-fore-darkgreen max-w-md w-full p-8 text-center shadow-2xl relative">
+
+<button onclick="closeModal('infoModal')" class="absolute top-4 right-4 text-gray-500 hover:text-black font-black text-xl">&times;</button>
+
+<h3 class="text-2xl font-black text-gray-900 uppercase mb-2 tracking-tight">Craftsmanship & ESG</h3>
+
+<p class="text-gray-600 text-xs font-light leading-relaxed mb-8">
+
+Setiap detail pembuatan kopi dan desain gerai Fore Coffee dibuat dengan standar kualitas tinggi serta prinsip keberlanjutan daur ulang plastik.
+
+</p>
+
+<button onclick="closeModal('infoModal')" class="w-full btn-ferrari-outline text-xs py-4 rounded-none">
+
+Close Window
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- JAVASCRIPT SLIDER & MODAL -->
+
+<script>
+
+let currentSlide = 0;
+
+const slides = document.querySelectorAll('.slide-item');
+
+const dots = document.querySelectorAll('.dot-btn');
+
+
+
+function showSlide(index) {
+
+slides.forEach((slide, i) => {
+
+slide.classList.remove('active');
+
+if (dots[i]) dots[i].classList.replace('bg-white', 'bg-white/40');
+
+});
+
+slides[index].classList.add('active');
+
+if (dots[index]) dots[index].classList.replace('bg-white/40', 'bg-white');
+
+}
+
+
+
+function nextSlide() {
+
+currentSlide = (currentSlide + 1) % slides.length;
+
+showSlide(currentSlide);
+
+}
+
+
+
+function prevSlide() {
+
+currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+
+showSlide(currentSlide);
+
+}
+
+
+
+function setSlide(index) {
+
+currentSlide = index;
+
+showSlide(currentSlide);
+
+}
+
+
+
+// Auto Slide Every 6 Seconds
+
+setInterval(nextSlide, 6000);
+
+
+
+// Modal Handlers
+
+function openModal(id, productName = '') {
+
+if (productName && document.getElementById('modalProductName')) {
+
+document.getElementById('modalProductName').innerText = productName;
+
+}
+
+document.getElementById(id).classList.remove('hidden');
+
+}
+
+function closeModal(id) {
+
+document.getElementById(id).classList.add('hidden');
+
+}
+</script>
+
+</body>
+
+</html>
